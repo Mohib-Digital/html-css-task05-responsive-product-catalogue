@@ -87,7 +87,7 @@ i {
 
 .background-img {
   background: linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.438)),url('../img/bg-img.jpg');
-  background-position: center;
+  /* background-position: center; */
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
@@ -108,6 +108,54 @@ i {
   width: 300px;
   margin: 20px 0;
 }
+
+/* Smart Phones */
+
+#mob-heading {
+  margin-top: 60px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+}
+
+.mobiles {
+  display: grid;
+  grid-template-columns: 14% 14% 14% 14% 14% 14%;
+  justify-content: space-around;
+}
+
+.mobiles div {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #C0E3F3;
+  border: 1px solid gainsboro;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.mobiles div img {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.mobiles span p {
+  padding: 3px;
+  font-size: small;
+}
+
+.mobiles span p:first-child {
+  font-weight: bold;
+}
+
+
+
+
+
+
 
 
 
@@ -137,6 +185,12 @@ i {
   }
   .cart img {
     padding-left: 7px;
+  }
+  .background-img h2{
+    font-size: 18px;
+  }
+  .background-img img {
+    width: 60%;
   }
 
 }
@@ -189,6 +243,53 @@ i {
   .categories ul {
     margin-top: -15px;
   }
+  .background-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) url('../img/bg-img.jpg'));
+    background-size: cover;
+  }
+  .background-img h2 {
+    font-size: 10px;
+  }
+  .background-img img{
+    width: 40%;
+  }
 
+  /* mobiles */
+  #mob-heading {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    padding: 0 20px;
+    font-size: 2.5vh;
+  }
+  .mobiles {
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  /* Mobiles */
+  #mob-heading {
+    margin-top: 80px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+  }
+  .mobiles {
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-around;
+  }
+  .mobiles div {
+    margin: 10px 0;
+    height: 100%;
+    border: 1px solid #fafafa;
+  }
+  .mobiles div img {
+    height: 90%;
+    width: 90%;
+  }
+  .mobiles span p {
+    font-size: medium;
+  }
 }
 
