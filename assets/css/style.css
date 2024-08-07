@@ -1,12 +1,14 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #a9c7e0;
 }
 
+/* nav */
 nav {
   width: 100%;
   height: 100px;
@@ -49,18 +51,144 @@ i {
   padding-left: 10px;
 }
 
+/* home */
+.home {
+  display: grid;
+  grid-template-columns: 20% 75%;
+  margin: 30px 0;
+  justify-content: space-evenly;
+}
+
+.categories {
+  background-color: aliceblue;
+  border: 1px solid wheat;
+  padding: 15px;
+}
+
+.categories h2 {
+  background-color: rgba(71, 71, 186, 0.804);
+  color: #fff;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.categories li {
+  list-style-type: none;
+  padding: 8px 0;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.categories li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.background-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.438)),url('../img/bg-img.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+.background-img h2 {
+  z-index: 2;
+  text-align: center;
+  font-size: 28px;
+}
+
+.background-img img {
+  width: 300px;
+  margin: 20px 0;
+}
 
 
 
+/* Responsiveness of the web pages */
 
+/* small screens */
+@media (max-width: 100px) {
+  nav {
+    height: 80px;
+  }
+  #logo {
+    width: 100px;
+    height: 100px;
+  }
+  input {
+    width: 250px;
+    height: 30px;
+  }
+  i {
+    margin-left: -20px;
+    padding: 7px;
+  }
+  .cart {
+    padding: 0 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .cart img {
+    padding-left: 7px;
+  }
 
+}
 
+/* mobile screen */
+@media (max-width: 400px) {
+  nav {
+    height: 60px;
+  }
+  #logo {
+    width: 60px;
+    height: 50px;
+  }
+  input {
+    width: 170px;
+    height: 25px;
+  }
+  i {
+    background-color: transparent;
+    color: #000;
+    padding-top: 2px;
+    margin-left: -28px;
+  }
+  .cart {
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 15px;
+    height: 15px;
+  }
+  .cart img {
+    padding-left: 5px;
+  }
+  /* home */
+  .home {
+    margin: 20px 0;
+  }
+  .categories {
+    padding: 5px;
+    height: 80px;
+  }
+  .categories h2 {
+    font-size: 7px;
+    padding: 2px;
+    margin-top: 2px;
+  }
+  .categories li {
+    padding: 2px 0;
+    font-size: 1vh;
+  }
+  .categories ul {
+    margin-top: -15px;
+  }
 
-
-
-
-
-
-
-
+}
 
