@@ -267,6 +267,91 @@ footer img {
 
 
 /* Responsiveness of the web pages */ 
+
+/* for tablet mobiles */
+@media (min-width: 401px) and (max-width: 768px)  {
+  /* nav */
+  nav {
+    width: 107%;
+  }
+  /* home */
+  .home {
+   margin-left: 45px;
+    
+  }
+  .categories {
+    padding: 7px;
+  }
+  .categories h2 {
+    font-size: 20px;
+    border-radius: 2px;
+  }
+  .categories li {
+    font-size: 15px;
+    padding: 10px;
+    line-height: 5px;
+  }
+  .background-img h2 {
+    font-size: 20px;
+  }
+  .background-img {
+    width: 100%;
+  }
+  .background-img img {
+    width: 40%;
+  }
+  /* smart phones */
+.mobiles {
+  display: grid;
+  grid-template-columns: 28% 28% 28%;
+  margin-left: 45px;
+  /* padding-left: 10px; */
+}
+.mobiles div {
+  width: 100%;
+}
+
+/* laptops */
+.laptops {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  margin-left: 45px;
+}
+.laptops div {
+  margin-bottom: 20px;
+}
+
+/* smart watches */
+.smart-watches {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  margin-left: 40px;
+}
+.smart-watches div {
+  width: 300px;
+}
+.smart-watches div img {
+  width: 140px !important;
+  height: 130px !important;
+}
+.smart-watches div p {
+  margin-right: 10px;
+  font-size: 10px;
+}
+footer {
+  width: 820px;
+}
+.all-right {
+  width: 820px;
+}
+}
+
+
+
+
+
+
+
 /* mobile screen */
 @media (max-width: 400px) {
   nav {
@@ -287,6 +372,8 @@ footer img {
     padding-top: 2px;
     margin-left: -30px;
   }
+
+  /* cart */
   .cart {
     padding-right: 35px;
     padding-left: 20px;
