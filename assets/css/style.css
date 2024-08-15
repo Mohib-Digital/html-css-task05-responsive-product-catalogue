@@ -19,6 +19,12 @@ nav {
   align-items: center;
 }
 
+.heading{
+  text-align: center;
+  margin: 3%;
+
+}
+
 #logo {
   width: 120px;
   height: 120px;
@@ -37,8 +43,11 @@ input {
 i {
   background-color: rgb(222, 204, 70);
   color: #fff;
-  padding: 9px;
-  margin-left: -30px;
+  padding-top: 10px;
+  padding-left: 6px;
+  /* margin-left: -30px;   */
+  width: 30px;
+  border: none;
 }
 
 .cart {
@@ -58,12 +67,15 @@ i {
   grid-template-columns: 20% 75%;
   margin: 30px 0;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .categories {
   background-color: aliceblue;
   border: 1px solid wheat;
   padding: 15px;
+  width: 100%;
+  height: 250px;
 }
 
 .categories h2 {
@@ -96,6 +108,7 @@ i {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 250px;
 }
 
 
@@ -110,13 +123,7 @@ i {
   margin: 20px 0;
 }
 
-/* Smart Phones */
 
-#mob-heading {
-  margin-top: 60px;
-  margin-bottom: 10px;
-  padding: 10px 20px;
-}
 
 .mobiles {
   display: grid;
@@ -139,7 +146,7 @@ i {
   height: 120px;
   width: 120px;
   border-radius: 5px;
-  margin: 10px;
+  /* margin: 10px; */
   background-color: transparent;
 }
 
@@ -152,12 +159,7 @@ i {
   font-weight: bold;
 }
 
-/* laptop */
-#laptop-heading {
-  margin-top: 60px;
-  margin-bottom: 10px;
-  padding: 10px 20px;
-}
+
 
 .laptops {
   display: grid;
@@ -202,17 +204,13 @@ i {
   padding-bottom: 15px;
 }
 
-/* Smart Watches */
-#Watches-heading {
-  margin-top: 80px;
-  margin-left: 10px;
-  padding: 10px 20px;
-}
+
 
 .smart-watches {
   display: grid;
   grid-template-columns: 30% 30%;
-  justify-content: space-around;
+  justify-content: center;
+  /* justify-content: space-around; */
 }
 
 .smart-watches div {
@@ -244,22 +242,20 @@ footer {
   justify-content: center;
   align-items: center;
   margin-top: 70px;
+  flex-direction: column;
   /* background-color: #91b5d3; */
   background-color: #333333;
 }
 
-footer img {
-  width: 50px;
-  height:50px;
-  padding: 10px;
-}
+.social-media-icons{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
 
-.all-right {
-  text-align: center;
-  background-color: #333333;
-  padding-top: 10px;
-  padding-bottom: 20px;
+}
+.copy-right {
   color: white;
+  margin-bottom: 10px;
 }
 
 
@@ -267,58 +263,84 @@ footer img {
 
 
 
+/* *Responsiveness of the web pages */ 
+/* * for tablet  */
 
+@media (max-width: 768px){
 
-/* Responsiveness of the web pages */ 
-
-/* for tablet mobiles */
-@media (min-width: 401px) and (max-width: 768px)  {
-  /* nav */
   nav {
-    width: 107%;
+    width: 100%;
   }
-  /* home */
+
+  #logo {
+    width: 90px;
+    height: 90px;
+  }
+  input {
+    width: 350px;
+    height: 30px;
+  }
+  .input i {
+    height: 30px;
+    padding-top: 5px;
+  }
+
   .home {
-   margin-left: 45px;
-    
+   margin: 20px 40px;
+   display: flex;
   }
   .categories {
     padding: 7px;
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
   }
   .categories h2 {
     font-size: 20px;
     border-radius: 2px;
   }
-  .categories li {
-    font-size: 15px;
+
+  .categories ul{
     padding: 10px;
-    line-height: 5px;
+    line-height:  15px;
   }
+
+  .categories ul a {
+    font-size: 14px;
+  }
+
   .background-img h2 {
     font-size: 20px;
   }
+
   .background-img {
-    width: 100%;
+    width:  70%;
+    height: 212px;
+    margin: 0 auto;
   }
+
   .background-img img {
     width: 40%;
   }
-  /* smart phones */
+
+  /* *smart phones */
+
 .mobiles {
   display: grid;
   grid-template-columns: 28% 28% 28%;
-  margin-left: 45px;
+  margin: 0 40px;
   /* padding-left: 10px; */
 }
 .mobiles div {
   width: 100%;
 }
 
-/* laptops */
+/* *laptops */
+
 .laptops {
   display: grid;
   grid-template-columns: 45% 45%;
-  margin-left: 45px;
+  margin: 0 40px;
 }
 .laptops div {
   margin-bottom: 20px;
@@ -328,26 +350,173 @@ footer img {
 .smart-watches {
   display: grid;
   grid-template-columns: 40% 40%;
-  margin-left: 40px;
+  justify-content: center;
+  align-items: center;
 }
+
 .smart-watches div {
-  width: 300px;
+  width: 270px;
+  margin: 10px auto;
+  padding: 0 30px;
 }
+
 .smart-watches div img {
   width: 140px !important;
   height: 130px !important;
 }
+
 .smart-watches div p {
   margin-right: 10px;
   font-size: 10px;
 }
+
 footer {
-  width: 820px;
+  width: 100%;
 }
+
 .all-right {
-  width: 820px;
+  width: 107%;
 }
 }
+
+
+
+
+/* tablet */
+
+@media (max-width: 690px) {
+  nav {
+    width: 100%;
+  }
+
+  #logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  input {
+    width: 300px;
+    height: 30px;
+  }
+
+  .cart {
+    display: flex;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    padding-top: 2px;
+  }
+
+
+  .smart-watches {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .smart-watches div {
+    width: 250px;
+    margin: 10px auto;
+    padding: 0 20px;
+  }
+  
+  .smart-watches div img {
+    width: 120px !important;
+    height: 110px !important;
+  }
+  
+  .smart-watches div p {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+
+  /* home */
+  .background-img h2 {
+    font-size: 15px;
+  }
+
+  .background-img img {
+    width: 35%;
+  } 
+}
+
+
+
+
+
+@media (max-width: 640px) {
+  .smart-watches {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .smart-watches div {
+    width: 220px;
+    margin: 10px auto;
+    padding: 0 10px;
+  }
+  
+  .smart-watches div img {
+    width: 110px !important;
+    height: 90px !important;
+  }
+  
+  .smart-watches div p {
+    margin-right: 10px;
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 570px) {
+  .categories {
+    padding: 4px;
+  }
+
+  .categories h2 {
+    font-size: 15px;
+  }
+
+  .categories ul{
+    padding: 3px;
+    line-height:  7px;
+  }
+
+  .categories ul a {
+    font-size: 12px;
+  } 
+
+
+  .background-img h2 {
+    font-size: 10px;
+  }
+
+  background-img {
+    width:  70%;
+    height: 100px;
+  }
+
+  .background-img img {
+    width: 30%;
+  } 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -418,14 +587,7 @@ footer {
     width: 35%;
   }
 
-  /* mobiles */
-  #mob-heading {
-    margin-top: 30px;
-    margin-bottom: 5px;
-    padding: 0 20px;
-    font-size: 2.5vh;
-    text-align: center;
-  }
+  
   .mobiles {
     grid-template-columns: 45% 45%;
     justify-content: space-around;
@@ -441,16 +603,6 @@ footer {
     margin-bottom: 3px;
   }
 
-
-  /* laptops */
-  #laptop-heading {
-    margin-top: 30px;
-    margin-bottom: 0px;
-    padding: 20px 20px;
-    font-size: 2.5vh;
-    text-align: center;
-    
-  }
 
   .laptops {
     display: grid;
@@ -506,6 +658,7 @@ footer {
     font-size: 2vh;
   }
   footer {
+    width: 100%;
     margin-top: 50px;
   }
   footer img {
@@ -528,3 +681,4 @@ footer {
     height: 100px;
   }
 }
+
